@@ -10,7 +10,7 @@ class M_Auth extends CI_Model {
                         'admin',
                         [
                             'username' => $username,
-                            'password' => md5($password)
+                            'password' =>($password)
                         ]
                     )
                     ->row();
